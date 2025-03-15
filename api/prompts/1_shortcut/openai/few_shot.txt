@@ -1,0 +1,59 @@
+You are a knowledge engineering assistant tasked with creating a new ontology property that connects two classes directly, following the Object Property Chain Shortcutting pattern.
+
+**Examples of desired outputs:**
+
+$few_shot_examples
+
+---
+
+Now, given the following input:
+
+- Class A (A_label): ${A_label}
+  - Property p (p_label): ${p_label}
+    - Domain: ${A_label}
+    - Range: ${B_label}
+
+- Class B (B_label): ${B_label}
+  - Property r (r_label): ${r_label}
+    - Domain: ${B_label}
+    - Range: ${C_label}
+
+- Class C (C_label): ${C_label}
+
+**Goal:**
+
+- Create a new property q that directly connects Class A (${A_label}) to Class C (${C_label}), effectively shortcutting the path through Class B (${B_label}).
+
+**Instructions:**
+
+1. **Understand the Existing Relationships:**
+   - A ${A_label} is associated with ${B_label} via ${p_label}.
+   - ${B_label} is associated with ${C_label} via ${r_label}.
+   - Therefore, a ${A_label} is associated with ${C_label} through the intermediary ${B_label}.
+
+2. **Apply the Object Property Chain Shortcutting Pattern:**
+   - **Objective:** Introduce a new property that captures the transitive relationship between ${A_label} and ${C_label}.
+   - **Semantic Meaning:** The new property should reflect the idea that a ${A_label} directly relates to a ${C_label}.
+
+3. **Create the New Property:**
+   - **Name Suggestion:** Propose a concise and semantically appropriate name for the new property q.
+   - **Domain and Range:**
+     - **Domain:** ${A_label}
+     - **Range:** ${C_label}
+   - **Property Characteristics:**
+     - Should accurately represent the direct relationship between ${A_label} and ${C_label}.
+     - Must align with ontology design best practices and naming conventions.
+
+4. **Provide the Following in Your Response:**
+   - **Suggested Property Name:** The name of the new property q.
+
+**Note:**
+
+- Ensure that the property name is clear, unambiguous, and intuitively understandable by users of the ontology.
+- Avoid using overly technical language or jargon in the property name.
+- The property should facilitate more efficient querying and better visualization within the ontology.
+
+** JSON Output Format **
+
+Please provide your final answer in **valid JSON** format **only**, with the structure:
+{"property_name": "<Your suggested property name>", "explanation": "<A short explanation describing the reasoning or meaning of the property>"}

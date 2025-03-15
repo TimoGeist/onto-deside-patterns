@@ -1,0 +1,17 @@
+{
+  "title": "Pattern1Response",
+  "type": "object",
+  "properties": {
+    "property_name": {
+      "type": "string",
+      "title": "Property Name",
+      "description": "Your suggested property name"
+    },
+    "explanation": {
+      "type": "string",
+      "title": "Explanation",
+      "description": "A short explanation describing the reasoning or meaning of the property"
+    }
+  },
+  "required": ["property_name", "explanation"]
+}

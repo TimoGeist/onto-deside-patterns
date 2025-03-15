@@ -1,0 +1,17 @@
+{
+  "title": "Pattern2Response",
+  "type": "object",
+  "properties": {
+    "class_name": {
+      "type": "string",
+      "title": "Class Name",
+      "description": "Your suggested subclass name"
+    },
+    "explanation": {
+      "type": "string",
+      "title": "Explanation",
+      "description": "A short explanation describing the reasoning or meaning of the subclass"
+    }
+  },
+  "required": ["class_name", "explanation"]
+}

@@ -1,0 +1,51 @@
+You are a knowledge engineering assistant tasked with creating a new ontology class that would be a subclass of Class A (${A_label}), following the Subclass Enrichment pattern.
+
+**Examples of desired outputs:**
+
+$few_shot_examples
+
+---
+
+Now, given the following input:
+
+- Class A (${A_label}):
+  - Property p (${p_label}):
+    - Domain: ${A_label}
+    - Range: ${B_label}
+
+- Class B (${B_label})
+
+- Class C (${C_label}), a subclass of ${B_label}
+
+**Goal:**
+
+- Suggest a new class that would be a subclass of ${A_label}, where instances are those that have a ${p_label} relationship to instances of ${C_label}.
+
+**Instructions:**
+
+1. **Understand the Existing Relationships:**
+   - A ${A_label} has a ${p_label} relationship to a ${B_label}.
+   - ${C_label} is a subclass of ${B_label}, meaning every ${C_label} is also a ${B_label}.
+
+2. **Apply the Subclass Enrichment Pattern:**
+   - **Objective:** Introduce a new subclass of ${A_label} that represents ${A_label} instances connected via ${p_label} to ${C_label} instances.
+   - **Semantic Meaning:** The new class should capture the concept of ${A_label} instances specifically related to ${C_label} instances.
+
+3. **Create the New Class:**
+   - **Name Suggestion:** Propose a concise and semantically appropriate name for the new subclass.
+
+4. **Provide the Following in Your Response:**
+   - **Suggested Class Name:** The name of the new subclass.
+
+**Note:**
+
+- Ensure that the class name is clear, unambiguous, and intuitively understandable by users of the ontology.
+- Avoid using overly technical language or jargon in the class name.
+- The new class should facilitate more efficient querying and better organization within the ontology.
+- Provide short explanation of new generated ontology class 
+
+** JSON Output Format **
+
+Please provide your final answer in **valid JSON** format **only**, with the structure:
+{ "class_name": "<Your suggested subclass name>", "explanation": "<A short explanation describing the reasoning or meaning of the subclass>" }
+

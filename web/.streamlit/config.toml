@@ -1,0 +1,18 @@
+[global]
+#disableWidgetStateDuplicationWarning = true
+
+[theme]
+primaryColor = "#a3cc33"  # Light green for buttons and active elements.
+backgroundColor = "#FFFFFF" # "#bec1c1"  main content area.
+secondaryBackgroundColor = "#FFFFFF"  # White for the sidebar.
+textColor = "#3a4244"  # Dark gray text color for good contrast on the white background.
+font = "sans serif"
+
+[server]
+port = 8501
+
+[logger]
+level = "error"
+
+[ui]
+hideTopBar=true

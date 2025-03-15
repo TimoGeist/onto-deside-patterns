@@ -1,0 +1,15 @@
+﻿?A_label,?p_label,?B_label,?r_label,?C_label,Property
+Emission Conversion Factor,has applicable period,Temporal entity,has beginning,Time instant,Applicable Period Start
+Emission Conversion Factor,has applicable period,Temporal entity,has beginning,Time instant,Applicable From Time
+Emission Conversion Factor,has applicable period,Temporal entity,has end,Time instant,Applicable Period End
+Emission Conversion Factor,has applicable period,Temporal entity,has end,Time instant,Applicable Until Time
+Collaboration Concept,uses component,Component Module,includes functional component,Functional Module,Component's Functional Module
+Collaboration Concept,uses component,Component Module,includes functional component,Functional Module,Composed Of Functional Module
+AccessConditionSet,hasVariable,Variable,hasValue,Value,Variable's Value
+AccessConditionSet,hasVariable,Variable,hasValue,Value,Defines Variable Value
+SLA Class,SLA Contains,Term of the agreement,Term Compensation,Conditions of compensation,Defines Compensation Terms
+SLA Class,SLA Contains,Term of the agreement,Include Defs,Definitions of the agreement,includes agreement definitions
+Space,has usergroup,Usergroup,has member,User Account,User Associated with Usergroup
+Group of Tables,table,Annotated Table,row,Row,Annotated Table Row
+Occurrence,is detected by,Device,has interface,Interface,Detected Through Device Interface
+Organization,delivery location,Residence Object,addres,BasicAddress,Has Delivery Address

@@ -1,0 +1,92 @@
+/* Sidebar Styling */
+[data-testid=stSidebar] {
+  border-right: 2px solid rgba(58, 66, 68, 0.2); 
+}
+
+/* Text Input Styling */
+[data-testid=textInputRootElement] {
+  border: 1px solid rgba(58, 66, 68, 0.2);
+}
+
+/* Setting the width of the first object */
+[data-baseweb="input"][data-testid="textInputRootElement"] {
+  width: 300px; /* Adjust the width as needed */
+}
+
+/* Setting the width of the second object */
+[data-baseweb="base-input"] {
+  width: 300px; /* Adjust the width as needed */
+}
+
+/* Select Box Styling */
+[data-baseweb=select] > div {
+  border-color: rgba(58, 66, 68, 0.2);
+}
+
+/* Sidebar Button Flex Display */
+section[data-testid="stSidebar"] div.stButton,
+section[data-testid="stSidebar"] div.stDownloadButton {
+  display: flex;
+}
+
+/* Sidebar Button Width and Margin */
+section[data-testid="stSidebar"] div.stButton button,
+section[data-testid="stSidebar"] div.stDownloadButton button {
+  width: 180px;
+  margin-left: 40px;
+}
+
+/* General Button Styling */
+.stButton > button,
+.stDownloadButton > button {
+  width: 300px;
+  height: 40px;
+  border-width: 1px;
+}
+
+/* Widget Label Margin */
+label[data-testid="stWidgetLabel"] {
+  margin-left: 5px;
+}
+
+/* "Info Id" Button Margin */
+button[data-testid="baseButton-secondaryFormSubmit"] {
+  margin-top: 26px;
+}
+
+/* Specific Margin Adjustment for Form Buttons */
+form#form1 .stButton button:nth-child(2),
+form#form2 .stButton button:nth-child(2) {
+  margin-top: 10px;
+}
+
+/* Text Area Styling */
+[data-testid="stTextArea"] textarea {
+  border: 1px solid rgba(58, 66, 68, 0.2);
+  border-radius: 4px; 
+  padding: 8px; 
+  font-size: 14px; 
+}
+
+/* Number Input Styling */
+[data-testid="stNumberInput"] input {
+  border: 1px solid rgba(58, 66, 68, 0.2);
+  border-radius: 4px; 
+  padding: 8px; 
+  font-size: 14px; 
+}
+
+/* Sidebar Download Button Specific Styling */
+section[data-testid="stSidebar"] div.stDownloadButton button {
+  width: 180px;
+  height: 40px;
+  border-width: 1px;
+  margin-left: 40px;
+}
+
+/* Center the file uploader */
+[data-testid="stFileUploadDropzone"] {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

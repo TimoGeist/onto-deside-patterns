@@ -568,7 +568,7 @@ def build_session_history_tab():
     a1.download_button("Export CSV", csv, "patterns_history.csv", "text/csv", key="download-csv")
     a2.button("Clear History", on_click=clear_localstorage)
     st.markdown("---")
-    sorted_operations =  sorted(operations, key=lambda o: get_timestamp_from(o["time"], time_format))
+    sorted_operations =  sorted(operations, key=lambda o: get_timestamp_from(o["time"], time_format), reverse=True)
     for o in sorted_operations:
         pattern = (
             "Shortcut" if "property_name" in o else
@@ -623,7 +623,7 @@ def build_session_history_tab():
             st.json(o["few_shot_examples"], expanded=False)
 
         long_pattern = f"Pattern 1: {pattern}" if pattern == "Shortcut" else f"Pattern 2: {pattern}"
-        loadb = st.button(f"Load {long_pattern}", key=f"{o['time']}", on_click=lambda o=o: load(o))
+        st.button(f"Load {long_pattern}", key=f"{o['time']}", on_click=lambda o=o: load(o))
 
         st.markdown("---")
 
